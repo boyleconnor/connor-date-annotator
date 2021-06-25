@@ -13,15 +13,14 @@ def get_tool():  # noqa: E501
     :rtype: Tool
     """
     tool = Tool(
-        name="date-annotator-example",
-        version="1.2.0",
+        name="connor-date-annotator",
+        version="0.0.1",
         license=License.APACHE_2_0,
-        repository="github:nlpsandbox/date-annotator-example",
-        description="Example implementation of the NLP Sandbox Date " +
-                "Annotator API",
-        author="NLP Sandbox Team",
-        author_email="team@nlpsandbox.io",
-        url="https://github.com/nlpsandbox/date-annotator-example",
+        repository="github:cascadianblue/connor-date-annotator",
+        description="Date annotator based on machine learning",
+        author="Connor Boyle",
+        author_email="connor.bo@gmail.com",
+        url="https://github.com/cascadianblue/connor-date-annotator",
         type=ToolType.DATE_ANNOTATOR,
         api_version="1.2.0"
     )
