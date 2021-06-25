@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   date-annotator:
-    image: docker.synapse.org/syn22277123/date-annotator-example:1.2.0
+    image: docker.synapse.org/syn25921767/cb-date-annotator:0.0.1
     build:
       context: server
       dockerfile: Dockerfile
