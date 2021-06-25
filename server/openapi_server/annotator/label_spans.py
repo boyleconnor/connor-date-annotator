@@ -2,7 +2,7 @@ from typing import Tuple, List
 from openapi_server.annotator.load_data import AnnotationSet
 
 
-PERSON_TYPES = {'PATIENT', 'DOCTOR'}
+DATE_TYPES = {'AGE', 'DATE'}
 
 
 Tokens = List[str]
@@ -20,7 +20,7 @@ def label_token(token: str, span: Span, annotation_set: AnnotationSet) -> Label:
     # Count annotated characters
     overlap = 0
     for annotation in annotation_set:
-        if annotation['TYPE'] in PERSON_TYPES:
+        if annotation['TYPE'] in DATE_TYPES:
             overlap += max(
                 min(end, annotation['end']) - max(start, annotation['start']),
                 0
