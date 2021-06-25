@@ -31,6 +31,7 @@ def create_text_date_annotations():  # noqa: E501
                 start=annotation['start'],
                 length=annotation['end'] - annotation['start'],
                 text=annotation['text'],
+                date_format='yyyy-mm-dd',
                 confidence=95.0
             ) for annotation in annotation_set]
 
