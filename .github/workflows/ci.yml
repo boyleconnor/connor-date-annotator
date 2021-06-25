@@ -11,7 +11,7 @@ on:
   pull_request:
 
 env:
-  docker_repository: docker.synapse.org/syn22277123/date-annotator-example
+  docker_repository: docker.synapse.org/syn25921767/cb-date-annotator
 
 jobs:
   configure:
