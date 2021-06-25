@@ -14,7 +14,7 @@ def get_tool():  # noqa: E501
     """
     tool = Tool(
         name="connor-date-annotator",
-        version="0.0.1",
+        version="0.0.2",
         license=License.APACHE_2_0,
         repository="github:cascadianblue/connor-date-annotator",
         description="Date annotator based on machine learning",
